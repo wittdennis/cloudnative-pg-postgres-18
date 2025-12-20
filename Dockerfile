@@ -1,7 +1,7 @@
 # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql versioning=docker
 ARG POSTGRES_VERSION=18.1
 
-FROM docker.io/library/alpine:3.23.0 AS pg_partman
+FROM docker.io/library/alpine:3.23.2 AS pg_partman
 
 COPY . /build
 
