@@ -4,7 +4,7 @@ COPY . /build
 
 WORKDIR /build
 
-# renovate: datasource=github-tags depName=pgpartman/pg_partman versioning=semver
+# renovate: datasource=github-tags depName=pgpartman/pg_partman packageName=pg_partman versioning=semver
 ARG PARTMAN_VERSION=v5.3.1
 RUN set -eux && \
     apk add --no-cache "curl" && \
