@@ -2,39 +2,16 @@ name: github-release
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        default: "auto"
+        description: Can be used to set a specific version. Use 'auto' for automatic version calculation
+        type: string
 
 jobs:
   release:
-    runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.RELEASE_TOKEN }}
-
-      - name: setup git config
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-
-      - name: install cocogitto
-        uses: cocogitto/cocogitto-action@52d0023b4396897f1815648e553db2ab8d782f3a # v4.2.0
-        with:
-          install-only: true
-
-      - name: bump version
-        id: release
-        run: |
-          VERSION=$("./parse_release_version.sh")
-          cog bump --version $VERSION
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-
-      - name: generate changelog
-        run: cog changelog --at ${{ steps.release.outputs.version }} > GITHUB_CHANGELOG.md
-
-      - uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2.6.1
-        name: create release
-        with:
-          body_path: GITHUB_CHANGELOG.md
-          tag_name: ${{ steps.release.outputs.version }}
-          token: ${{ secrets.RELEASE_TOKEN }}
+    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@4935fe307bbde00c895e19be00476904f61bbfa1 # 2.0.4
+    with:
+      version: ${{ inputs.version }}
+    secrets:
+      release-token: ${{ secrets.RELEASE_TOKEN }}
