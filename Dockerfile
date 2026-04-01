@@ -5,7 +5,7 @@ COPY . /build
 WORKDIR /build
 
 # renovate: datasource=github-tags depName=pg_partman packageName=pgpartman/pg_partman versioning=semver
-ARG PARTMAN_VERSION=v5.3.1
+ARG PARTMAN_VERSION=v5.4.3
 RUN set -eux && \
     apk add --no-cache "curl" && \
     curl -L "https://github.com/pgpartman/pg_partman/archive/refs/tags/${PARTMAN_VERSION}.tar.gz" --output "pg_partman.tar.gz" && \
