@@ -1,6 +1,3 @@
-# renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql versioning=docker
-ARG POSTGRES_VERSION=18.1
-
 FROM docker.io/library/alpine:3.23.3 AS pg_partman
 
 COPY . /build
@@ -15,7 +12,7 @@ RUN set -eux && \
     tar -xvf "pg_partman.tar.gz" && \
     mv "pg_partman-${PARTMAN_VERSION:1}" "pg_partman"
 
-FROM ghcr.io/cloudnative-pg/postgresql:${POSTGRES_VERSION}-standard-trixie
+FROM ghcr.io/cloudnative-pg/postgresql:18.1-standard-trixie
 COPY --from=pg_partman /build/pg_partman /pg_partman
 
 USER root
