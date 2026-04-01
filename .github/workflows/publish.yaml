@@ -1,12 +1,18 @@
 name: publish-image
 
+permissions: {}
+
 on:
+  workflow_dispatch:
   release:
     types: published
 
 jobs:
   publish:
     uses: wittdennis/pipelines/.github/workflows/container-image-publish.yaml@4935fe307bbde00c895e19be00476904f61bbfa1 # 2.0.4
+    permissions:
+      contents: read
+      packages: write
     with:
       image-name: cloudnative-pg-postgres-18
       registries: |
