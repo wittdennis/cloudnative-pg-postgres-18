@@ -1,4 +1,4 @@
-FROM docker.io/library/alpine:3.23.3 AS pg_partman
+FROM docker.io/library/alpine:3.23.4 AS pg_partman
 
 COPY . /build
 
