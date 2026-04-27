@@ -12,7 +12,7 @@ RUN set -eux && \
     tar -xvf "pg_partman.tar.gz" && \
     mv "pg_partman-${PARTMAN_VERSION:1}" "pg_partman"
 
-FROM ghcr.io/cloudnative-pg/postgresql:18.3-standard-trixie@sha256:25cfdd49e4a2b98e497e59e0520d9ef208b54588889fa70098685e97f11d97d5
+FROM ghcr.io/cloudnative-pg/postgresql:18.3-standard-trixie@sha256:81bad466fe006454482678c6c67a24c1e30454b519011e0196cba2e4c83e1e1a
 COPY --from=pg_partman /build/pg_partman /pg_partman
 
 USER root
