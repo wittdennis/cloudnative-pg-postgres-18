@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [18.3.6](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/6c5e56e71f0af851660ca65eeb611d4233092386..18.3.6) - 2026-05-11
+#### Bug Fixes
+- (**deps**) update ghcr.io/cloudnative-pg/postgresql:18.3-standard-trixie docker digest to 9f9f53c - ([5c26628](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/5c26628e3ab12e35b44a2615a3c48d879126a206)) - wittdennis-renovate[bot]
+#### Miscellaneous Chores
+- (**deps**) update wittdennis/pipelines action to v2.0.16 - ([80dc695](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/80dc6956f35306853d967f24d0ca234549da5d09)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.15 - ([c9ac74c](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/c9ac74c08bb93e961380040c298ebf31a1d06579)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.14 - ([2cb273f](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/2cb273f8ee041ce2f92c59834fa292f1141172db)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.13 - ([fdfe1e7](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/fdfe1e72c5baa56366ccbe3409e17fef71837878)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.12 - ([6c5e56e](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/6c5e56e71f0af851660ca65eeb611d4233092386)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [18.3.5](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/bcb16bf65006fbebcdc6bba60d18154b9a6ac75b..18.3.5) - 2026-04-27
 #### Bug Fixes
 - (**deps**) update ghcr.io/cloudnative-pg/postgresql:18.3-standard-trixie docker digest to 81bad46 - ([82dd95d](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/82dd95db261033d564191d837cf6892c1bcbf1e3)) - wittdennis-renovate[bot]
