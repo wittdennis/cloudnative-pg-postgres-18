@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [18.4.0](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/b9f83f9376dea9c8e704a61f263327983c4683de..18.4.0) - 2026-08-15
+#### Features
+- add pgvector - ([b9f83f9](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/b9f83f9376dea9c8e704a61f263327983c4683de)) - Dennis Witt
+
+- - -
+
 ## [18.3.21](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/c9b684e10c015871e9e1769b90404057e84bdd2b..18.3.21) - 2026-08-15
 #### Bug Fixes
 - (**deps**) update ghcr.io/cloudnative-pg/postgresql docker tag to v18.6 - ([c9b684e](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/c9b684e10c015871e9e1769b90404057e84bdd2b)) - wittdennis-renovate[bot]
