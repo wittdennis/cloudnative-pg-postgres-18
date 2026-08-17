@@ -19,7 +19,7 @@ COPY . /build
 WORKDIR /build
 
 # renovate: datasource=github-tags depName=pgvector packageName=pgvector/pgvector versioning=semver
-ARG PGVECTOR_VERSION=v0.8.3
+ARG PGVECTOR_VERSION=v0.8.6
 RUN set -eux && \
     apk add --no-cache "curl" && \
     curl -L "https://github.com/pgvector/pgvector/archive/refs/tags/${PGVECTOR_VERSION}.tar.gz" --output "pgvector.tar.gz" && \
