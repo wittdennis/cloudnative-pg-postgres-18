@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   build:
-    uses: wittdennis/pipelines/.github/workflows/container-image-build.yaml@11429dc3cc02ef0463ad99260ddb4ec467e2a49e # 2.0.57
+    uses: wittdennis/pipelines/.github/workflows/container-image-build.yaml@e7797886157a51b1eb44d9ef04455990b4d26452 # 2.0.58
     with:
       image-name: cloudnative-pg-postgres-18
       create-artifacts: false
