@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [18.4.9](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/696bc90336ef7f16dfd89abc9d1b27821d2a5698..18.4.9) - 2026-10-05
+#### Bug Fixes
+- (**deps**) update ghcr.io/cloudnative-pg/postgresql:18.6-standard-trixie docker digest to 79be0d1 - ([696bc90](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/696bc90336ef7f16dfd89abc9d1b27821d2a5698)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [18.4.8](https://github.com/wittdennis/cloudnative-pg-postgres-18/compare/a8a808083578ea5eddfd93a441991457b2bf0d74..18.4.8) - 2026-10-01
 #### Bug Fixes
 - (**deps**) update dependency pgvector to v0.8.7 - ([57913aa](https://github.com/wittdennis/cloudnative-pg-postgres-18/commit/57913aaa0083942de709593ffd293c5da878cb8b)) - wittdennis-renovate[bot]
