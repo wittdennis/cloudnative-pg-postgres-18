@@ -1,4 +1,4 @@
-FROM docker.io/library/alpine:3.24.2 AS pg_partman
+FROM docker.io/library/alpine:3.24.3 AS pg_partman
 
 COPY . /build
 
@@ -12,7 +12,7 @@ RUN set -eux && \
     tar -xvf "pg_partman.tar.gz" && \
     mv "pg_partman-${PARTMAN_VERSION:1}" "pg_partman"
 
-FROM docker.io/library/alpine:3.24.2 AS pgvector
+FROM docker.io/library/alpine:3.24.3 AS pgvector
 
 COPY . /build
 
