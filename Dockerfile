@@ -26,7 +26,7 @@ RUN set -eux && \
     tar -xvf "pgvector.tar.gz" && \
     mv "pgvector-${PGVECTOR_VERSION:1}" "pgvector"
 
-FROM ghcr.io/cloudnative-pg/postgresql:18.6-standard-trixie@sha256:39add80f5b1e573e2f6b641c66fd1a2f8dede67ca0330e870285bc1078551390
+FROM ghcr.io/cloudnative-pg/postgresql:18.6-standard-trixie@sha256:5bf4a23aa13fb560903fba932676773ba4ba2729c162e587b09bf539a2e3df56
 COPY --from=pg_partman /build/pg_partman /pg_partman
 COPY --from=pgvector /build/pgvector /pgvector
 
